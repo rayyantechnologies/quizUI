@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="./css/tailwind.css">
+</head>
+<style>
+    .min-h-70{
+        min-height: 73vh;
+    }
+    .max-h-15{
+        max-height: 15vh;
+    }
+</style>
+<body class="min-h-screen">
+    <header class="flex justify-between items-center bg-white py-6 px-16 max-h-15 bg-red-100">
+        <img src="img/logo-dark.png" alt="" width="145px">
+        <p class="font-thin md:text-3xl sm:text-base">RayyanTech Exams</p>
+    </header>
+    <main class="pb-8 px-16  text-center min-h-70 flex flex-col justify-center">
+        <div class="">
+            <form action="signin.html" method="get" class="bg-blue-100 py-12 shadow-2xl text-center">
+                <fieldset>
+                    <label for="quiz code" class="font-serif sm:text-sm md:text-2xl mb-4">Quiz Code</label> <br>
+                    <input  type="text" placeholder="Enter the quiz access code" name="code" class="sm:mt-2 md:mt-4 p-3 px-4 border-2 rounded-lg">
+                </fieldset>
+
+                <!-- <br> -->
+                <input type="submit" class="mt-2 p-1 px-4 border-2 rounded-lg bg-blue-600 text-white hover:shadow-xl hover:text-blue-500 hover:bg-white cursor-pointer" value="Start Quiz">
+            </form>
+        </div>
+        <!-- <div class="min-h-30"></div> -->
+    </main>
+    <footer class="bg-blue-400 py-4 px-16 max-h-15">
+        <div class="text-white mb-2">
+            <p class="m-0 text-xl flex justify-start items-center"> <img src="img/logo-light.png" alt="" width="75px"> &nbsp; &nbsp; &nbsp; &nbsp; RayyanTech Exams</p>
+            <p class="text-sm md:text-base">A platform created to monitor, track and test students.</p>
+        </div>
+        <p class="text-center text-white text-sm">App by <a href="https://rayyantech.sgm.ng" class="hover:underline">RayyanTech</a> </p>
+    </footer>
+</body>
+</html>
